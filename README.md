@@ -27,7 +27,7 @@ git checkout -b featureA
 ![alt](/ScreenShot/part_4.png)
 
 Membuat file bari feature.dart menambahkan beberapa code
-```bash
+```dart
 void main(){
   var featureA = 'this is featureA';
   print(featureA);
@@ -72,3 +72,47 @@ lalu untuk mengembalikan code yang sudah kita git stash kita bisa menggukana git
 git stash apply
 ```
 ![alt](/ScreenShot/part_9.png)
+
+## Melakukan git merge pada branch development
+
+melakukan git merge dari branch development dengan featureA
+```bash
+git merge --no--ff featureA
+```
+![alt](/ScreenShot/part_10.png)
+
+melakukan git merge dari branch development dengan featureB
+```bash
+git merge --no--ff featureB
+```
+![alt](/ScreenShot/part_11.png)
+
+melakukan git merge dari branch master dengan development
+```bash
+git merge --no--ff development
+```
+![alt](/ScreenShot/part_12.png)
+
+## Melakukan conflict 
+
+membuat sebuah function featureA pada branch featureA
+```dart
+String featureA(){
+    return 'this is function featureA';
+}
+```
+
+membuat sebuah function featureA pada branch featureB
+```dart
+String featureB(){
+    return 'this is function featureB';
+}
+```
+
+setelah kita melakukan merge pada branch development dengan fetureA dan featureB , maka akan terjadi konflik
+
+![alt](/ScreenShot/part_13.png)
+
+setelah itu kita buat kode menjadi seperti ini
+
+![alt](/ScreenShot/part_14.png)
