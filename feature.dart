@@ -6,3 +6,6 @@ void main(){
 String fatrueA(){
   return 'this is function featureA';
 }
+String featureB(){
+  return 'this is function featureB';
+}
