@@ -1,4 +1,3 @@
 void main(){
-  var featureA = 'this is featureA';
-  print(featureA);
+    var nama = 'Gilang';
 }
