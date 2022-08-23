@@ -27,7 +27,7 @@ git checkout -b featureA
 ![alt](/ScreenShot/part_4.png)
 
 Membuat file bari feature.dart menambahkan beberapa code
-```bash
+```dart
 void main(){
   var featureA = 'this is featureA';
   print(featureA);
@@ -92,3 +92,19 @@ melakukan git merge dari branch master dengan development
 git merge --no--ff development
 ```
 ![alt](/ScreenShot/part_12.png)
+
+## Melakukan conflict 
+
+membuat sebuah function featureA pada branch featureA
+```dart
+String featureA(){
+    return 'this is function featureA';
+}
+```
+
+membuat sebuah function featureA pada branch featureB
+```dart
+String featureB(){
+    return 'this is function featureB';
+}
+```
