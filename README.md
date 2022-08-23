@@ -116,3 +116,17 @@ setelah kita melakukan merge pada branch development dengan fetureA dan featureB
 setelah itu kita buat kode menjadi seperti ini
 
 ![alt](/ScreenShot/part_14.png)
+
+Setelah itu lakukan push branch development
+```bash
+git add .
+git merge -m "merge featureA dan featureB"
+git push origin development
+```
+
+Setelah itu lakukan push branch development
+```bash
+git add .
+git merge --no-ff development
+git push origin master
+```
